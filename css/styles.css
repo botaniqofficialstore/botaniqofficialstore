@@ -1,0 +1,377 @@
+:root {
+  --primary-color: #25313d;
+  --secondary-color: #fbfbb1;
+  --light-color: #f4f4f4;
+  --text-color: #fff;
+  --green-color: #80ba23;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--light-color);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Header */
+.site-header {
+  background-color: var(--primary-color);
+  padding: 60px 30px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap; /* allow wrapping */
+}
+
+.logo {
+  height: 150px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Navigation */
+.nav-menu {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  align-items: center;
+}
+.nav-menu a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 5px;
+  transition: color .2s ease, transform .12s ease;
+}
+.nav-menu a:hover { color: var(--green-color); transform: translateY(-2px); }
+
+/* Intro */
+.intro {
+  padding: 40px 20px;
+  background-color: var(--green-color);
+  color: var(--text-color);
+}
+
+.intro h1 {
+  text-align: center;   /* always center heading */
+  margin-bottom: 20px;
+}
+
+.intro p {
+  text-align: justify;  /* justify paragraph */
+  margin: 0 auto;       /* center paragraph block */
+  line-height: 1.4;
+}
+
+/* Products */
+.products {
+  padding: 50px 30px;
+  text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 60px; /* extra space between rows */
+  column-gap: 30px; /* keep horizontal space the same */
+  margin-top: 20px;
+}
+.product-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Make inner layout a column so the button can stick to the bottom */
+  display: flex;
+  flex-direction: column;
+  min-height: 80%;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+.product-card p {
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.net-weight {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+
+
+/* View More Button — pinned to bottom, no float */
+.view-more-btn {
+  display: inline-block;
+  background-color: var(--green-color);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-top: auto;          /* push to bottom */
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  align-self: flex-end;      /* stays to the right without using float */
+}
+.view-more-btn:hover {
+  background-color: var(--primary-color);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between; /* MRP left, button right */
+  align-items: center;
+  margin-top: auto;  /* pushes footer to bottom */
+}
+
+.mrp {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+
+/* About & Contact (footer section) */
+.about-contact-section {
+  display: flex;
+  gap: 10px;
+  padding: 60px 10px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  align-items: stretch;   /* make separator fill height on desktop */
+}
+
+.about-column, .contact-column {
+  flex: 1;
+  text-align: center;
+}
+
+.about-column h2,
+.contact-column h2 {
+  text-align: center;   /* keep headings always centered */
+  margin-bottom: 20px;
+}
+
+.about-column p,
+.contact-column p {
+  text-align: center;  /* justify text like intro */
+  max-width: 600px;     /* prevent paragraphs from being too wide */
+  margin: 0 auto;       /* center inside each column */
+  line-height: 1.6;
+}
+
+/* Vertical separator on desktop */
+.separator {
+  background-color: rgba(255,255,255,0.95);
+  width: 0.8px;
+  margin: 0 60px;
+  align-self: stretch;
+}
+
+/* Social links */
+.social-links {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-links img {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  transition: transform .18s;
+}
+.social-links a:hover img { transform: scale(1.08); }
+
+/* Mobile: stack vertically, separator becomes horizontal */
+@media (max-width: 768px) {
+  .about-contact-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .separator {
+    width: 100%;
+    height: 0.8px;
+    margin: 20px 0;
+  }
+}
+
+
+/* Popup Background */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.656);
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(6px);
+}
+
+/* Popup Box */
+.popup-content {
+  background: #fff;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.416);
+  animation: fadeIn 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+
+/* Image Header with Title + Close */
+.popup-header-image {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 35px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.close-btn:hover { opacity: 0.8; }
+
+/* Title inside image */
+.popup-header-image h2 {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  margin: 0;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+/* Scrollable Area for description + benefits */
+.popup-scrollable {
+  padding: 15px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+/* Description text */
+.popup-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  font-family: "Segoe UI", sans-serif;
+  text-align: justify;
+  margin-bottom: 20px;
+  padding: 10px 12px;
+  background: #f9f9f9;
+  border-left: 4px solid #228B22;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Benefits Section */
+.popup-benefits h3 { margin-bottom: 8px; color: #228B22; }
+.popup-benefits ul { list-style: none; padding: 0; margin: 0; }
+.popup-benefits li {
+  padding: 6px 0 6px 24px;
+  position: relative;
+}
+.popup-benefits li::before {
+  content: "--";
+  position: absolute;
+  left: 0;
+  color: #228B22;
+  font-weight: bold;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ---------- Responsive tweaks ---------- */
+
+/* Tablet down: header stacks neatly */
+@media (max-width: 1024px) {
+  .site-header { flex-direction: column; align-items: center; }
+  .logo { height: 100px; }
+}
+
+/* Mobile: nav in a single row below logo, and
+   footer separator becomes a horizontal line */
+@media (max-width: 768px) {
+  /* header nav */
+  .nav-menu {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+    margin-top: 8px;
+  }
+
+  /* footer stacks and uses a horizontal separator */
+  .about-contact-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .separator {
+    display: block;          /* ensure it shows on mobile */
+    width: 100%;             /* full width */
+    height: 1px;             /* horizontal line */
+    margin: 10px 0;          /* spacing above/below */
+    align-self: auto;        /* no need to stretch vertically now */
+  }
+
+  .popup-header-image { height: 160px; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .popup-content { width: 95%; }
+  .popup-header-image h2 { font-size: 1.5rem; }
+}

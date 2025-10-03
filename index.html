@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BotaniQ — Fresh Microgreens</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="BotaniQ Logo" class="logo" />
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+      <a href="#products">Microgreens</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Intro -->
+  <section class="intro animate-on-scroll">
+    <h1>MicroGreens</h1>
+    <p>Our microgreens are freshly grown, hand-harvested, and packed with vibrant flavor and exceptional nutrition. Cultivated from premium quality seeds using clean, sustainable methods, they are harvested at the peak of freshness to ensure maximum taste and nutrient density. Each batch is free from harmful chemicals and pesticides, giving you pure, safe, and healthy greens for your table. With their intense flavors, crisp textures, and beautiful colors, our microgreens are perfect for enhancing salads, sandwiches, smoothies, and gourmet dishes—bringing freshness and quality you can truly taste.</p>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products animate-on-scroll">
+    <h2>Our Microgreens</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="image-container">
+        <img src="assets/microgreens/sunflower_Micro.png" alt="Sunflower Microgreens" />
+        <span class="net-weight">100g</span>
+        </div>
+        <h3>Sunflower</h3>
+        <p>Crunchy and nutty, rich in vitamins and healthy fats. Perfect for salads, sandwiches, or snacks.</p>
+        <div class="card-footer">
+        <span class="mrp">₹160</span>
+        <button class="view-more-btn"
+          onclick="openPlantPopup('Sunflower', 'assets/backgroundImages/sunflowerBack_Micro.png', 'Sunflower Microgreens are young, tender seedlings of the sunflower plant, harvested just after the cotyledon leaves have developed. They are crisp, nutty, and slightly sweet in flavor, making them a delicious and nutrient-dense addition to salads, sandwiches, smoothies, and garnishes. Packed with essential vitamins, minerals, and plant-based protein, they are a favorite among health-conscious individuals and chefs.',['Rich in vitamin E, which supports skin health and acts as a powerful antioxidant.','High in vitamin C for improved immunity and collagen production.','Contains B vitamins (especially folate) for better brain function and energy metabolism.','Good source of plant-based protein, aiding muscle repair and growth.','Provides essential minerals like magnesium, zinc, iron, and calcium for overall wellness.','Contains chlorophyll, which supports detoxification and boosts oxygen supply in the blood.','Helps regulate blood sugar levels and supports heart health.','Improves digestive health due to dietary fiber content.','May reduce inflammation due to antioxidant compounds.']
+,'#FFFF', '#25313d')">
+          View More
+        </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+        <img src="assets/microgreens/broccoli_Micro.png" alt="Broccoli Microgreens" />
+        <span class="net-weight">100g</span>
+        </div>
+        <h3>Broccoli</h3>
+        <p>Mild, fresh taste with a hint of pepper. Packed with antioxidants and great for health.</p>
+        <div class="card-footer">
+        <span class="mrp">₹180</span>
+        <button class="view-more-btn"
+          onclick="openPlantPopup('Broccoli', 'assets/backgroundImages/Broccoli_background.jpg', 'Broccoli Microgreens are the young, tender shoots of the broccoli plant, harvested within 7–10 days of germination when they are at peak nutrient density. They have a mild, slightly peppery flavor and are packed with powerful phytonutrients, making them a superfood in the microgreens family. Often considered more nutrient-rich than mature broccoli, they are a favorite among health enthusiasts and chefs for both taste and wellness benefits.',['Rich in vitamin C to strengthen immunity and promote healthy skin','Extremely high in sulforaphane, a compound known for its cancer-fighting and detoxifying properties.','Good source of vitamin K for strong bones and healthy blood clotting.','Contains vitamin A for eye health and skin repair.','High in antioxidants to reduce inflammation and protect cells from damage.','Supports heart health by improving cholesterol levels and blood pressure.','Aids detoxification by activating liver enzymes.','Promotes gut health with natural plant fiber.','May improve brain function due to its neuroprotective compounds.'],'#fff', '#80ba23')">
+          View More
+        </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+        <img src="assets/microgreens/radhishPink_Micro.png" alt="Radish Pink Microgreens" />
+        <span class="net-weight">80g</span>
+        </div>
+        <h3>Radish Pink</h3>
+        <p>Bright pink stems with a spicy kick. Adds color and flavor to any dish.</p>
+        <div class="card-footer">
+        <span class="mrp">₹160</span>
+        <button class="view-more-btn"
+          onclick="openPlantPopup('Radish Pink', 'assets/backgroundImages/radishPink_background.JPG', 'Radish Pink Microgreens are the vibrant, tender seedlings of pink radish plants, harvested just after the first leaves emerge. They have a crisp texture and a zesty, peppery flavor, adding both color and a flavorful punch to salads, sandwiches, and garnishes. Packed with essential vitamins, minerals, and antioxidants, these microgreens are as nutritious as they are beautiful, making them a favorite for both culinary use and health benefits.',['Rich in vitamin C to boost immunity and promote skin health.','Contains vitamin A for better vision and healthy skin.','High in vitamin K to support bone strength and proper blood clotting.','Provides calcium, potassium, and magnesium for strong bones and heart health.','Naturally anti-inflammatory and supports detoxification.','Helps improve digestion with dietary fiber.','Supports weight management with low calories but high nutrients.','Contains antioxidants that protect cells from damage.','May help regulate blood sugar and improve metabolism.'],'#fff', '#80ba23')">
+          View More
+        </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+        <img src="assets/microgreens/betroot_Micro.png" alt="Beetroot Microgreens" />
+        <span class="net-weight">50g</span>
+        </div>
+        <h3>Beetroot</h3>
+        <p>Sweet and earthy with deep red stems. Full of nutrients and visually appealing.</p>
+        <div class="card-footer">
+        <span class="mrp">₹200</span>
+        <button class="view-more-btn"
+          onclick="openPlantPopup('Beetroot', 'assets/backgroundImages/beetroot_background.JPG', 'Beetroot Microgreens are the tender, colorful seedlings of the beet plant, harvested at their early growth stage when nutrient concentration is at its peak. With their vibrant red stems and earthy-sweet flavor, they add both beauty and nutrition to salads, wraps, smoothies, and gourmet dishes. These microgreens are packed with essential vitamins, minerals, and antioxidants, making them a delicious and health-boosting addition to any diet.',['Rich in vitamin C to boost immunity and collagen production.','Contains vitamin A for eye health and skin repair.','High in iron to support healthy blood and prevent anemia.','Provides magnesium and potassium for heart health and muscle function.','Loaded with antioxidants that protect cells from oxidative stress.','May help improve blood circulation and lower blood pressure.','Supports detoxification and liver health.','Enhances stamina and endurance with natural nitrates.','Aids digestion with dietary fiber content.'],'#fff', '#80ba23')">
+          View More
+        </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+        <img src="assets/microgreens/pakchoi_Micro.png" alt="Pakchoi Microgreens" />
+        <span class="net-weight">80g</span>
+        </div>
+        <h3>Pakchoi</h3>
+        <p>Mild, fresh cabbage-like flavor. Great for salads and Asian dishes.</p>
+        <div class="card-footer">
+        <span class="mrp">₹180</span>
+        <button class="view-more-btn"
+          onclick="openPlantPopup('Pakchoi (Chinese Cabbage)', 'assets/backgroundImages/pakchoi_background.PNG', 'Pakchoi Microgreens are the young, tender shoots of the pakchoi (bok choy) plant, harvested within 7–10 days of germination when their flavor and nutrients are at their peak. They have a mild, slightly sweet, and cabbage-like taste, making them perfect for salads, sandwiches, soups, and stir-fry toppings. Packed with essential vitamins, minerals, and antioxidants, pakchoi microgreens are a powerhouse of nutrition in a small, delicate form.',['Rich in vitamin C to boost immunity and promote healthy skin.','Contains vitamin A for good vision and skin health.','High in vitamin K to support strong bones and healthy blood clotting.','Good source of calcium and magnesium for bone strength and muscle function.','Contains iron to support healthy blood and energy levels.','Loaded with antioxidants that protect cells from damage.','Supports heart health by improving cholesterol and blood pressure levels.','Aids digestion with dietary fiber content.','May help reduce inflammation and support overall wellness.']
+,'#fff', '#80ba23')">
+          View More
+        </button>
+      </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+        <img src="assets/microgreens/amaranthuRed_Micro.png" alt="Red Amaranthus Microgreens" />
+        <span class="net-weight">100g</span>
+        </div>
+        <h3>Red Amaranthus</h3>
+        <p>Bright red leaves with a light, nutty taste. High in vitamins and looks stunning on plates.</p>
+        <div class="card-footer">
+        <span class="mrp">₹160</span>
+        <button class="view-more-btn"
+          onclick="openPlantPopup('Red Amaranthus', 'assets/backgroundImages/amaranthusBack_Micro.png', 'Red Amaranthus Microgreens are the young, vibrant shoots of the red amaranth plant, harvested at their early growth stage when nutrient concentration is highest. With their striking red-purple leaves and mild, earthy flavor, they add a splash of color and a burst of nutrition to salads, wraps, smoothies, and gourmet dishes. Known for their exceptional vitamin, mineral, and antioxidant content, these microgreens are both a culinary delight and a health-boosting superfood.',['Rich in vitamin C to enhance immunity and skin health.','Contains vitamin A for good vision and cell repair.','High in vitamin K to support bone strength and blood clotting.','Excellent source of iron to promote healthy blood and prevent anemia.','Provides calcium, magnesium, and potassium for bone and heart health.','Packed with antioxidants that fight oxidative stress and aging.','Supports detoxification and liver function.','May help reduce inflammation naturally.','Aids muscle recovery with plant-based protein content.'],'#fff', '#80ba23')">
+          View More
+        </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+        <img src="assets/microgreens/grenMustard_Micro.png" alt="Green Mustard Microgreens" />
+        <span class="net-weight">100g</span>
+        </div>
+        <h3>Green Mustard</h3>
+        <p>Spicy and zesty flavor. Adds freshness and kick to meals.</p>
+        <div class="card-footer">
+        <span class="mrp">₹160</span>
+        <button class="view-more-btn"
+          onclick="openPlantPopup('Green Mustard', 'assets/backgroundImages/greenMustard_background.PNG', 'Green Mustard Microgreens are the tender, young shoots of the mustard plant, harvested within 7–10 days of sprouting when their flavor and nutrients are at their peak. They have a bold, peppery taste with a hint of spice, making them a flavorful addition to salads, sandwiches, stir-fries, and garnishes. Packed with vitamins, minerals, and potent plant compounds, green mustard microgreens are a nutrient-dense superfood that supports overall health and wellness.',['Rich in vitamin C to boost immunity and support skin health.','Contains vitamin A for healthy eyes and cell regeneration.','High in vitamin K to promote strong bones and proper blood clotting.','Provides calcium, magnesium, and potassium for bone and heart health.','Contains sulforaphane and other compounds with cancer-fighting potential.','Supports digestion and gut health with dietary fiber.','Helps reduce inflammation naturally.','Aids in detoxification by supporting liver function.','May improve metabolism and support healthy weight management.'],'#fff', '#80ba23')">
+          View More
+        </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+        <img src="assets/microgreens/radishWhite_Micro.png" alt="Radish white Microgreens" />
+        <span class="net-weight">100g</span>
+        </div>
+        <h3>Radish white</h3>
+        <p>Crisp, peppery taste with white stems. Boosts flavor and nutrition in dishes.</p>
+        <div class="card-footer">
+        <span class="mrp">₹160</span>
+        <button class="view-more-btn"
+          onclick="openPlantPopup('Radish white', 'assets/backgroundImages/radishWhite_background.JPG', 'Radish White Microgreens are the crisp, tender seedlings of the white radish plant, harvested just after the first leaves develop when their flavor and nutrients are at their highest. They have a fresh, mildly spicy, and peppery taste, adding a zesty kick to salads, sandwiches, soups, and garnishes. Loaded with essential vitamins, minerals, and antioxidants, these microgreens are both a flavorful ingredient and a powerful boost to a healthy diet.',['Rich in vitamin C to strengthen immunity and promote skin health.','Contains vitamin A for eye health and tissue repair.','High in vitamin K to support bone strength and blood clotting.','Provides calcium, magnesium, and potassium for bone and heart wellness.','Naturally anti-inflammatory and supports detoxification.','Helps improve digestion with dietary fiber.','Contains antioxidants to protect cells from oxidative damage.','May help regulate blood sugar levels and boost metabolism.','Supports heart health by improving cholesterol and circulation.']
+,'#fff', '#80ba23')">
+          View More
+        </button>
+        </div>
+      </div>
+       
+    </div>
+  </section>
+
+  <!-- Single Section: About (left) + Separator + Contact (right) -->
+  <section class="about-contact-section animate-on-scroll" aria-label="About and Contact">
+    <!-- About (left) -->
+    <div id="about" class="about-column">
+      <h2>About Us</h2>
+      <p>At BotaniQ, we’re passionate about providing the freshest and healthiest microgreens. Grown sustainably, our greens are perfect for health-conscious individuals and gourmet kitchens alike.</p>
+    </div>
+
+    <!-- Vertical separator (becomes horizontal on small screens) -->
+    <div class="separator" aria-hidden="true"></div>
+
+    <!-- Contact (right) -->
+    <div id="contact" class="contact-column">
+      <h2>Contact Us</h2>
+      <p>Reach out on social platforms or email us directly — we reply quickly!</p>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/botaniqofficialstore/" target="_blank" rel="noopener">
+          <img src="assets/social/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/share/1ArEA5bHqz/" target="_blank" rel="noopener">
+          <img src="assets/social/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://wa.me/917306045755" target="_blank" rel="noopener">
+          <img src="assets/social/whatsapp.png" alt="WhatsApp" />
+        </a>
+        <a href="mailto:botaniqofficialstore@gmail.com">
+          <img src="assets/social/gmail.png" alt="Gmail" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Plant Popup -->
+<div id="plantPopup" class="popup">
+  <div class="popup-content">
+    
+    <!-- Top image header with overlay -->
+    <div class="popup-header-image" id="popupHeaderImage">
+      <span class="close-btn" onclick="closePlantPopup()">&times;</span>
+      <h2 id="popupTitle">Plant Name</h2>
+    </div>
+
+    <!-- Scrollable Content -->
+    <div class="popup-scrollable">
+      <!-- Description -->
+      <div class="popup-description">
+        <p id="popupDescription">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <!-- Benefits Section -->
+      <div class="popup-benefits">
+        <h3>Benefits</h3>
+        <ul id="popupBenefits">
+          <li>Rich in vitamins and minerals</li>
+          <li>Boosts immune system</li>
+          <li>Enhances digestion</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+  <script src="js/scroll-animations.js"></script>
+  <script src="js/popup.js"></script>
+
+<script>
+  // Plant data (you can extend this with all your plants)
+  const plantData = {
+    "Sun flower": {
+      image: "images/sunflower.jpg",
+      description: "Sunflower microgreens are crunchy, nutty, and rich in vitamins E, B, and healthy fats. They boost immunity and add a delicious texture to salads, sandwiches, and wraps."
+    },
+    "Green mustard": {
+      image: "images/green_mustard.jpg",
+      description: "Green mustard microgreens have a bold, peppery flavor and are packed with vitamin K, C, and antioxidants, making them a great choice for spicing up dishes."
+    },
+    "Broccoli": {
+      image: "images/broccoli.jpg",
+      description: "Broccoli microgreens are mild, slightly sweet, and loaded with sulforaphane, a compound known for its cancer-fighting properties."
+    },
+    "Radish Pink": {
+      image: "images/radish_pink.jpg",
+      description: "Radish pink microgreens offer a sharp, peppery flavor with a beautiful pink stem, rich in vitamins and minerals for a healthy kick."
+    }
+  };
+
+  // Modal elements
+  const modal = document.getElementById("plantModal");
+  const modalImage = document.getElementById("modalImage");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalDescription = document.getElementById("modalDescription");
+  const closeBtn = document.querySelector(".close-btn");
+
+  // View More button click
+  document.querySelectorAll(".view-more-btn").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const plantName = btn.closest(".product-card").querySelector("h3").innerText;
+      if (plantData[plantName]) {
+        modalImage.src = plantData[plantName].image;
+        modalTitle.innerText = plantName;
+        modalDescription.innerText = plantData[plantName].description;
+      } else {
+        modalImage.src = "";
+        modalTitle.innerText = plantName;
+        modalDescription.innerText = "No details available.";
+      }
+      modal.style.display = "flex";
+    });
+  });
+
+  // Close modal
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Close on background click
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+
+
+
+
+</body>
+</html>
